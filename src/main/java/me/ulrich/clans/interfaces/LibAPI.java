@@ -41,4 +41,5 @@ public interface LibAPI {
 
 	BukkitAudiences getAdventure();
 	
+	HashMap<String, String> getCommandAliases();
 }
