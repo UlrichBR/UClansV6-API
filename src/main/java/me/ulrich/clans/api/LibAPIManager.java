@@ -46,6 +46,11 @@ public class LibAPIManager implements LibAPI {
 	public void insertCommand(String command, String permission, String alias, double value, int cooldown, CommandData_show data,CommandData_title title, CommandData_actionbar actionbar, CommandData_sound sound, HashMap<String, CommandData_show> subcommands, CommandData_disable disable) {}
 	
 	@Override
+	public HashMap<String, String> getCommandAliases(){
+		return null;
+	}
+	
+	@Override
 	public String getPluginTag() {
 		return null;
 	}
