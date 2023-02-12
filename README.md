@@ -1,4 +1,5 @@
 # UClansV6-API
+[![](https://jitpack.io/v/UlrichBR/UClansV6-API.svg)](https://jitpack.io/#UlrichBR/UClansV6-API)
 
 Maven:
 
@@ -12,5 +13,5 @@ Maven:
 &lt;dependency&gt;
     &lt;groupId&gt;com.github.UlrichBR&lt;/groupId&gt;
     &lt;artifactId&gt;UClansV6-API&lt;/artifactId&gt;
-    &lt;version&gt;6.0.0-snapshot37&lt;/version&gt;
+    &lt;version&gt;VERSION&lt;/version&gt;
 &lt;/dependency&gt;</code></pre>
