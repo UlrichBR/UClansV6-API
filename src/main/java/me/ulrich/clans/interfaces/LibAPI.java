@@ -3,6 +3,7 @@ package me.ulrich.clans.interfaces;
 import java.util.HashMap;
 
 import org.bukkit.Location;
+import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 import me.ulrich.clans.data.CommandData;
@@ -40,6 +41,25 @@ public interface LibAPI {
 	Hologram createHolo(final Location location, String id, Object extra);
 
 	BukkitAudiences getAdventure();
-	
+
 	HashMap<String, String> getCommandAliases();
+
+	HashMap<String, String> getMainCommandAliases();
+
+	String replaceMainCmd(String string);
+
+	String replaceCmd(String string);
+
+	void showHelpSubmessage(CommandSender sender, CommandData commander);
+
+	boolean findAliases(String sub, String alias);
+
+	String findReturnAliases(String sub);
+
+	String findReturnMain(String sub);
+
+	String findAliasesByValue(String sub);
+
+	boolean isUseGUI();
+	
 }
