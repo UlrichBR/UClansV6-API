@@ -3,6 +3,7 @@ package me.ulrich.clans.api;
 import java.util.HashMap;
 
 import org.bukkit.Location;
+import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import me.ulrich.clans.Clans;
 import me.ulrich.clans.data.CommandData;
@@ -48,6 +49,51 @@ public class LibAPIManager implements LibAPI {
 	@Override
 	public HashMap<String, String> getCommandAliases(){
 		return null;
+	}
+	
+	@Override
+	public HashMap<String, String> getMainCommandAliases(){
+		return null;
+	}
+	
+	@Override
+	public String replaceMainCmd(String string) {
+		return null;
+	}
+	
+	@Override
+	public String replaceCmd(String string) {
+		return null;
+	}
+	
+	@Override
+	public void showHelpSubmessage(CommandSender sender, CommandData commander) {
+		
+	}
+	
+	@Override
+	public boolean findAliases(String sub, String alias) {
+		return false;
+	}
+	
+	@Override
+	public String findReturnAliases(String sub) {
+		return null;
+	}
+	
+	@Override
+	public String findReturnMain(String sub) {
+		return null;
+	}
+	
+	@Override
+	public String findAliasesByValue(String sub) {
+		return null;
+	}
+	
+	@Override
+	public boolean isUseGUI() {
+		return false;
 	}
 	
 	@Override
