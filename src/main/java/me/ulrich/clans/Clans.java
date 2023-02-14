@@ -7,6 +7,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 import me.ulrich.clans.api.AddonAPIManager;
 import me.ulrich.clans.api.BossBarAPIManager;
 import me.ulrich.clans.api.ClanAPIManager;
+import me.ulrich.clans.api.CommandAPIManager;
 import me.ulrich.clans.api.HooksAPIManager;
 import me.ulrich.clans.api.LevelAPIManager;
 import me.ulrich.clans.api.LibAPIManager;
@@ -32,6 +33,7 @@ public final class Clans extends JavaPlugin implements UClans{
 	private HologramManager hologramManager;
 	private final ModerationAPIManager modAPI;
 	private final LevelAPIManager levelAPI;
+	private final CommandAPIManager commandAPI;
 	
 	public Clans() {
 		this.ClanAPI = new ClanAPIManager(this);
@@ -43,6 +45,7 @@ public final class Clans extends JavaPlugin implements UClans{
 		this.AddonAPI = new AddonAPIManager(this);
 		this.modAPI = new ModerationAPIManager(this);
 		this.levelAPI = new LevelAPIManager(this);
+		this.commandAPI = new CommandAPIManager(this);
 		}
 	
 	@Override
@@ -112,6 +115,13 @@ public final class Clans extends JavaPlugin implements UClans{
 		return null;
 	}
 
+	public boolean isUseGUI() {
+		return false;
+	}
+
+	public CommandAPIManager getCommandAPI() {
+		return null;
+	}
 
 
 }
