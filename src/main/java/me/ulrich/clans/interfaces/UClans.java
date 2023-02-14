@@ -5,6 +5,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 import me.ulrich.clans.api.AddonAPIManager;
 import me.ulrich.clans.api.BossBarAPIManager;
 import me.ulrich.clans.api.ClanAPIManager;
+import me.ulrich.clans.api.CommandAPIManager;
 import me.ulrich.clans.api.HooksAPIManager;
 import me.ulrich.clans.api.LevelAPIManager;
 import me.ulrich.clans.api.LibAPIManager;
@@ -33,10 +34,13 @@ public interface UClans {
 	LevelAPIManager getLevelAPI();
 	
 	ModerationAPIManager getModAPI();
+	
+	CommandAPIManager getCommandAPI();
 
 	void loadAddons();
 	void startTasks();
 	void registerEvents();
+	
 
 	
 	
