@@ -25,4 +25,6 @@ public interface LibAPI {
 
 	boolean isUseGUI();
 	
+	boolean removeIfPreset(String id);
+	
 }
