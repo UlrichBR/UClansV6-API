@@ -50,6 +50,11 @@ public class LibAPIManager implements LibAPI {
 		return null;
 	}
 	
+	@Override
+	public boolean removeIfPreset(String id) {
+		return false;
+	}
+	
 	public Clans getPlugin() {
 		return null;
 	}
