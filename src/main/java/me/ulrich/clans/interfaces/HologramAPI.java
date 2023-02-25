@@ -22,6 +22,8 @@ public interface HologramAPI {
      */
     Hologram createHologram(final Clans plugin, final Location location, String id, Object extra);
 
+    boolean removeIfPreset(final Clans plugin, String id);
+    
     /**
      * Set a holograms line at an index
      *
