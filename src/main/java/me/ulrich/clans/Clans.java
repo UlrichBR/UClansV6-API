@@ -11,6 +11,7 @@ import me.ulrich.clans.api.CommandAPIManager;
 import me.ulrich.clans.api.HooksAPIManager;
 import me.ulrich.clans.api.LevelAPIManager;
 import me.ulrich.clans.api.LibAPIManager;
+import me.ulrich.clans.api.LoggerAPIManager;
 import me.ulrich.clans.api.ModerationAPIManager;
 import me.ulrich.clans.api.MoneyAPIManager;
 import me.ulrich.clans.api.PlayerAPIManager;
@@ -34,7 +35,8 @@ public final class Clans extends JavaPlugin implements UClans{
 	private final ModerationAPIManager modAPI;
 	private final LevelAPIManager levelAPI;
 	private final CommandAPIManager commandAPI;
-	
+	private final LoggerAPIManager loggerAPI;
+
 	public Clans() {
 		this.ClanAPI = new ClanAPIManager(this);
 		this.PlayerAPI = new PlayerAPIManager(this);
@@ -46,7 +48,9 @@ public final class Clans extends JavaPlugin implements UClans{
 		this.modAPI = new ModerationAPIManager(this);
 		this.levelAPI = new LevelAPIManager(this);
 		this.commandAPI = new CommandAPIManager(this);
-		}
+		this.loggerAPI = new LoggerAPIManager(this);
+
+	}
 	
 	@Override
 	public JavaPlugin getPlugin() {
@@ -121,6 +125,10 @@ public final class Clans extends JavaPlugin implements UClans{
 
 	public CommandAPIManager getCommandAPI() {
 		return null;
+	}
+	
+	public LoggerAPIManager getLoggerAPI() {
+		return loggerAPI;
 	}
 
 
