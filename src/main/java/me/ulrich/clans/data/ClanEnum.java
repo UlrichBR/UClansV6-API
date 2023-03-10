@@ -6,6 +6,10 @@ public class ClanEnum {
 		EN, ES, RU, DE, BR;
 	}
 	
+	public enum LoggerTime{
+		ALL, DAILY, WEEKLY, MONTHLY, YEARLY,
+	}
+	
 	public enum PlayerLeaveReaction{
 		KICK, LEAVE;
 	}
