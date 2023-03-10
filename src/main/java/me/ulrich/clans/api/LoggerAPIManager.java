@@ -2,9 +2,13 @@ package me.ulrich.clans.api;
 
 import java.util.HashMap;
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
+import org.bukkit.Material;
+
 import me.ulrich.clans.Clans;
+import me.ulrich.clans.data.ClanEnum.LoggerTime;
 import me.ulrich.clans.data.LoggerData;
 import me.ulrich.clans.interfaces.LoggerAPI;
 
@@ -46,6 +50,21 @@ public class LoggerAPIManager implements LoggerAPI {
 	
 	@Override
 	public HashMap<UUID, List<LoggerData>> getLoggerData() {
+		return null;
+	}
+
+	@Override
+	public boolean addClanLogger(UUID clanUUID, String text, String plugin, Material material) {
+		return false;
+	}
+
+	@Override
+	public Optional<LoggerData> getPluginLogger(UUID clanUUID, UUID loggerUUID) {
+		return Optional.empty();
+	}
+
+	@Override
+	public List<LoggerData> getClanLoggerTimed(UUID clanUUID, LoggerTime time) {
 		return null;
 	}
 }
