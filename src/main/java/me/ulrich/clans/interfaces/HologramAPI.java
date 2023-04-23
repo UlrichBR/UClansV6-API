@@ -78,5 +78,7 @@ public interface HologramAPI {
      * @param player            The player
      */
     void hideTo(final VisibilityManager visibilityManager, final Player player);
+    
+    Optional<Hologram> getHologram(String id);
 
 }
