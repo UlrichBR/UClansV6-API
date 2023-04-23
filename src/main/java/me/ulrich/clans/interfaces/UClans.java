@@ -6,6 +6,7 @@ import me.ulrich.clans.api.AddonAPIManager;
 import me.ulrich.clans.api.BossBarAPIManager;
 import me.ulrich.clans.api.ClanAPIManager;
 import me.ulrich.clans.api.CommandAPIManager;
+import me.ulrich.clans.api.DiscordAPIManager;
 import me.ulrich.clans.api.HooksAPIManager;
 import me.ulrich.clans.api.LevelAPIManager;
 import me.ulrich.clans.api.LibAPIManager;
@@ -39,6 +40,8 @@ public interface UClans {
 	CommandAPIManager getCommandAPI();
 	
 	LoggerAPIManager getLoggerAPI();
+	
+	DiscordAPIManager getDiscordAPI();
 
 
 	void loadAddons();
