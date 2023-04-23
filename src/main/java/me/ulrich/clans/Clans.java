@@ -8,6 +8,7 @@ import me.ulrich.clans.api.AddonAPIManager;
 import me.ulrich.clans.api.BossBarAPIManager;
 import me.ulrich.clans.api.ClanAPIManager;
 import me.ulrich.clans.api.CommandAPIManager;
+import me.ulrich.clans.api.DiscordAPIManager;
 import me.ulrich.clans.api.HooksAPIManager;
 import me.ulrich.clans.api.LevelAPIManager;
 import me.ulrich.clans.api.LibAPIManager;
@@ -15,7 +16,6 @@ import me.ulrich.clans.api.LoggerAPIManager;
 import me.ulrich.clans.api.ModerationAPIManager;
 import me.ulrich.clans.api.MoneyAPIManager;
 import me.ulrich.clans.api.PlayerAPIManager;
-import me.ulrich.clans.api.DiscordAPIManager;
 import me.ulrich.clans.data.Addon;
 import me.ulrich.clans.interfaces.UClans;
 import me.ulrich.clans.manager.HologramManager;
@@ -132,10 +132,10 @@ public final class Clans extends JavaPlugin implements UClans{
 	}
 	
 	public LoggerAPIManager getLoggerAPI() {
-		return loggerAPI;
+		return null;
 	}
 	public DiscordAPIManager getDiscordAPI() {
-		return discordAPI;
+		return null;
 	}
 
 }
