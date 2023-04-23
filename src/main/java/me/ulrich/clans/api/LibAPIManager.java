@@ -1,5 +1,7 @@
 package me.ulrich.clans.api;
 
+import java.util.Optional;
+
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
 
@@ -50,13 +52,18 @@ public class LibAPIManager implements LibAPI {
 		return null;
 	}
 	
+	public Clans getPlugin() {
+		return null;
+	}
+
 	@Override
 	public boolean removeIfPreset(String id) {
 		return false;
 	}
-	
-	public Clans getPlugin() {
-		return null;
+
+	@Override
+	public Optional<Hologram> getHolo(String id) {
+		return Optional.empty();
 	}
 
 	
