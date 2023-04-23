@@ -1,11 +1,15 @@
 package me.ulrich.clans.interfaces;
 
+import java.util.Optional;
+
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
 
 import net.kyori.adventure.platform.bukkit.BukkitAudiences;
 
 public interface LibAPI {
+
+	
 
 	void sendTitle(Player p, String msg, int fadeIn, int stay, int fadeOut);
 
@@ -24,7 +28,9 @@ public interface LibAPI {
 	BukkitAudiences getAdventure();
 
 	boolean isUseGUI();
-	
+
 	boolean removeIfPreset(String id);
+
+	Optional<Hologram> getHolo(String id);
 	
 }
