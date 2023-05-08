@@ -3,7 +3,7 @@ package me.ulrich.clans.data;
 public class ClanEnum {
 	
 	public enum ClanLangs{
-		EN, ES, RU, DE, BR;
+		EN, PL, TR, RU, ES, HU, GE;
 	}
 	
 	public enum LoggerTime{
@@ -12,6 +12,14 @@ public class ClanEnum {
 	
 	public enum PlayerLeaveReaction{
 		KICK, LEAVE;
+	}
+	
+	public enum BannerFilter{
+		COMMON, BANNER, HEAD;
+	}
+	
+	public enum UnlockerTypes{
+		BANNER_UPLOAD, MEMBER_DEMOTE, MEMBER_PROMOTE, MEMBER_REGROUP, ACCEPT_WAR, INVITE_WAR, REMOVE_MEMBERS, INVITE_MEMBERS, MODTAG, CHANGE_DESC;
 	}
 	
 	public enum EnumExpand {
@@ -73,6 +81,10 @@ public class ClanEnum {
 	
 	public enum PlayerSettingsType{
 		INVITATIONS;
+	}
+	
+	public enum RedisType{
+		EMPTY, CLANUPDATEUUID, PLAYERUPDATEUUID, INVITEUPDATEUUID, MODERATIONUPDATEUUID, PLAYERTELEPORT, CLANCHAT, CUSTOM, CLEARPRORYEDPLAYERS, PROXYEDPLAYERS;
 	}
 	
 	public enum SettingsFlagsAccept {
