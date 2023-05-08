@@ -16,6 +16,7 @@ import me.ulrich.clans.api.LoggerAPIManager;
 import me.ulrich.clans.api.ModerationAPIManager;
 import me.ulrich.clans.api.MoneyAPIManager;
 import me.ulrich.clans.api.PlayerAPIManager;
+import me.ulrich.clans.api.SyncAPIManager;
 import me.ulrich.clans.data.Addon;
 import me.ulrich.clans.interfaces.UClans;
 import me.ulrich.clans.manager.HologramManager;
@@ -38,6 +39,7 @@ public final class Clans extends JavaPlugin implements UClans{
 	private final CommandAPIManager commandAPI;
 	private final LoggerAPIManager loggerAPI;
 	private final DiscordAPIManager discordAPI;
+	private final SyncAPIManager syncAPI;
 
 	public Clans() {
 		this.ClanAPI = new ClanAPIManager(this);
@@ -52,6 +54,7 @@ public final class Clans extends JavaPlugin implements UClans{
 		this.commandAPI = new CommandAPIManager(this);
 		this.loggerAPI = new LoggerAPIManager(this);
 		this.discordAPI = new DiscordAPIManager(this);
+		this.syncAPI = new SyncAPIManager(this);
 
 
 	}
@@ -135,6 +138,10 @@ public final class Clans extends JavaPlugin implements UClans{
 		return null;
 	}
 	public DiscordAPIManager getDiscordAPI() {
+		return null;
+	}
+
+	public SyncAPIManager getSyncAPI() {
 		return null;
 	}
 
