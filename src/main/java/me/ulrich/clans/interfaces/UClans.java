@@ -14,6 +14,7 @@ import me.ulrich.clans.api.LoggerAPIManager;
 import me.ulrich.clans.api.ModerationAPIManager;
 import me.ulrich.clans.api.MoneyAPIManager;
 import me.ulrich.clans.api.PlayerAPIManager;
+import me.ulrich.clans.api.SyncAPIManager;
 
 public interface UClans {
 
@@ -42,6 +43,8 @@ public interface UClans {
 	LoggerAPIManager getLoggerAPI();
 	
 	DiscordAPIManager getDiscordAPI();
+	
+	SyncAPIManager getSyncAPI();
 
 
 	void loadAddons();
