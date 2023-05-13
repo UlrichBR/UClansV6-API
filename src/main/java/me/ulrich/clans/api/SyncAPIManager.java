@@ -16,6 +16,10 @@ public class SyncAPIManager implements SyncAPI {
 		this.plugin = clans;
 	}
 	
+	public enum DebugType {
+		SENT, RECEIVED;
+	}
+	
 	@Override
 	public boolean syncEnabled() {
 		return false;
@@ -39,6 +43,11 @@ public class SyncAPIManager implements SyncAPI {
 	@Override
 	public void setProxyedPlayers(List<String> proxyedPlayers) {
 
+	}
+	
+	@Override
+	public void debugMessage(DebugType type, String message) {
+		
 	}
 	
 	public Clans getPlugin() {
