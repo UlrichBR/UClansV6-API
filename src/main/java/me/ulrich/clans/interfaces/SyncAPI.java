@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.bukkit.entity.Player;
 
+import me.ulrich.clans.api.SyncAPIManager.DebugType;
 import me.ulrich.clans.data.ClanEnum.RedisType;
 
 public interface SyncAPI {
@@ -17,5 +18,7 @@ public interface SyncAPI {
 	List<String> getProxyedPlayers();
 
 	void setProxyedPlayers(List<String> proxyedPlayers);
+
+	void debugMessage(DebugType type, String message);
 
 }
