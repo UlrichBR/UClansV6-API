@@ -143,6 +143,12 @@ public interface ClanAPI {
 
 	double getClanKDR(UUID clanUUID);
 
+	boolean addSlot(UUID clanUUID, int amount, CommandSender sender);
+
+	boolean removeSlot(UUID clanUUID, int amount, CommandSender sender);
+
+	boolean setSlot(UUID clanUUID, int amount, CommandSender sender);
+
 	
 
 	
