@@ -340,5 +340,20 @@ public class ClanAPIManager implements ClanAPI {
 	public double getClanKDR(UUID clanUUID) {
 		return 0;
 	}
+
+	@Override
+	public boolean addSlot(UUID clanUUID, int amount, CommandSender sender) {
+		return false;
+	}
+
+	@Override
+	public boolean removeSlot(UUID clanUUID, int amount, CommandSender sender) {
+		return false;
+	}
+
+	@Override
+	public boolean setSlot(UUID clanUUID, int amount, CommandSender sender) {
+		return false;
+	}
 	
 }
