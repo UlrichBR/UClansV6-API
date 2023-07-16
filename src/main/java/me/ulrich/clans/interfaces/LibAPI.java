@@ -5,6 +5,7 @@ import java.util.Optional;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
 
+import me.ulrich.clans.data.ClanEnum.TranslatableKey;
 import net.kyori.adventure.platform.bukkit.BukkitAudiences;
 
 public interface LibAPI {
@@ -32,5 +33,7 @@ public interface LibAPI {
 	boolean removeIfPreset(String id);
 
 	Optional<Hologram> getHolo(String id);
+
+	String translate(TranslatableKey trans, String object, String... args);
 	
 }
