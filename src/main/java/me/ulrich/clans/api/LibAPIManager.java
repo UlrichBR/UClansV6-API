@@ -6,6 +6,7 @@ import org.bukkit.Location;
 import org.bukkit.entity.Player;
 
 import me.ulrich.clans.Clans;
+import me.ulrich.clans.data.ClanEnum.TranslatableKey;
 import me.ulrich.clans.interfaces.Hologram;
 import me.ulrich.clans.interfaces.LibAPI;
 import net.kyori.adventure.platform.bukkit.BukkitAudiences;
@@ -66,6 +67,10 @@ public class LibAPIManager implements LibAPI {
 		return Optional.empty();
 	}
 
+	@Override
+	public String translate(TranslatableKey trans, String object, String... args) {
+		return null;
+	}
 	
 
 }
