@@ -26,8 +26,12 @@ public class ClanEnum {
 		VERT, UP, DOWN;
 	}
 	
+	public enum TranslatableKey{
+		block, entity;
+	}
+	
 	public enum MoneyType{
-		VAULT, PLAYERPOINTS, CLANSOULS, TOKENENCHANT, DISABLED, ULTRAECONOMY;
+		VAULT, PLAYERPOINTS, CLANSOULS, TOKENENCHANT, DISABLED, ULTRAECONOMY, ELEMENTALGEMS;
 	}
 	public enum ImportStorage{
 		MYSQL, SQLITE;
