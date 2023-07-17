@@ -72,5 +72,10 @@ public class LibAPIManager implements LibAPI {
 		return null;
 	}
 	
+	@Override
+	@Deprecated
+	public String translateOutReference(String key, String object, String... args) {
+		return null;
+	}
 
 }
