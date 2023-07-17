@@ -35,5 +35,7 @@ public interface LibAPI {
 	Optional<Hologram> getHolo(String id);
 
 	String translate(TranslatableKey trans, String object, String... args);
+
+	String translateOutReference(String key, String object, String... args);
 	
 }
