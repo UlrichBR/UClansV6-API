@@ -27,7 +27,7 @@ public class ClanEnum {
 	}
 	
 	public enum TranslatableKey{
-		block, entity;
+		block, entity, item, biome, color, enchantment, gameMode;
 	}
 	
 	public enum MoneyType{
