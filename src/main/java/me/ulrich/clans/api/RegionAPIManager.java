@@ -42,8 +42,8 @@ public class RegionAPIManager implements RegionAPI {
 	}
 
 	@Override
-	public Optional<Cuboid> getClaimCuboidLocation(String pluginName, Player player, Location location) {
-		return Optional.empty();
+	public Location[] getClaimCornersLocation(String pluginName, Player player, Location location) {
+		return new Location[0];
 	}
 
 	@Override
@@ -53,6 +53,11 @@ public class RegionAPIManager implements RegionAPI {
 
 	@Override
 	public Optional<String> getPluginVersion(String pluginName) {
+		return Optional.empty();
+	}
+
+	@Override
+	public Optional<String> getClaimName(String pluginName, Location location) {
 		return Optional.empty();
 	}
 
