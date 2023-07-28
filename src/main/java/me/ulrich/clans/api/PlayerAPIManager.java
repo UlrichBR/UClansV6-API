@@ -11,7 +11,11 @@ import me.ulrich.clans.data.PlayerData;
 import me.ulrich.clans.interfaces.PlayerAPI;
 
 public class PlayerAPIManager implements PlayerAPI {
-
+	
+	public HashMap<String, RegionAPI> getRegionAPI(){
+		return null;
+	}
+	
 
 	public PlayerAPIManager(Clans clans) {}
 	
