@@ -2,6 +2,7 @@ package me.ulrich.clans.api;
 
 import java.util.HashMap;
 import java.util.Optional;
+import java.util.UUID;
 
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
@@ -36,8 +37,8 @@ public class RegionAPIManager implements RegionAPI {
 	}
 
 	@Override
-	public boolean getClaimOwner(String pluginName, Location location) {
-		return false;
+	public Optional<UUID> getClaimOwner(String pluginName, Location location) {
+		return null;
 	}
 
 	@Override
