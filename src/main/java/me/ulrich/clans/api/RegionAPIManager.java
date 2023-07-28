@@ -1,8 +1,10 @@
 package me.ulrich.clans.api;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
+import java.util.Map.Entry;
 
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
@@ -30,6 +32,14 @@ public class RegionAPIManager implements RegionAPI {
 	
 	public boolean removeImplementation(String pluginName) {
 		return false;
+	}
+	
+	public List<String> getImplementationPlugins() {
+		return null;
+	}
+	
+	public List<Entry<String, RegionAPI>> findClaimedLocationImplement(Location location){
+		return null;
 	}
 
 	@Override
