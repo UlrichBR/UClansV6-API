@@ -1,27 +1,26 @@
 package me.ulrich.clans.interfaces;
 
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map.Entry;
 import java.util.Optional;
-import java.util.UUID;
 
 import org.bukkit.Location;
-import org.bukkit.entity.Player;
 
 public interface RegionAPI {
-	
-	boolean hasClaimLocation(String pluginName, Location location);
-	
-	boolean isOwnerClaimLocation(String pluginName, Player player, Location location);
 
-	boolean isMemberClaimLocation(String pluginName, Player player, Location location);
-	
-	Optional<UUID> getClaimOwner(String pluginName, Location location);
+	HashMap<String, RegionImplement> getRegionAPI();
 
-	Location[] getClaimCornersLocation(String pluginName, Player player, Location location);
+	boolean addImplementation(String pluginName, RegionImplement region);
 
-	boolean canDestroyClaimLocation(String pluginName, Player player, Location location);
-	
-	Optional<String> getClaimName(String pluginName, Location location);
-	
-	Optional<String> getPluginVersion(String pluginName);
+	boolean hasPluginImplemented(String pluginName);
+
+	boolean removeImplementation(String pluginName);
+
+	List<String> getImplementationPlugins();
+
+	List<Entry<String, RegionImplement>> findClaimedLocationImplement(Location location);
+
+	Optional<RegionImplement> getRegionImplemented(String pluginName);
 
 }
