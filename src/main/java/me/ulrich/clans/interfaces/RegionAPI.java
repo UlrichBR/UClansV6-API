@@ -1,6 +1,7 @@
 package me.ulrich.clans.interfaces;
 
 import java.util.Optional;
+import java.util.UUID;
 
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
@@ -15,7 +16,7 @@ public interface RegionAPI {
 
 	boolean isMemberClaimLocation(String pluginName, Player player, Location location);
 	
-	boolean getClaimOwner(String pluginName, Location location);
+	Optional<UUID> getClaimOwner(String pluginName, Location location);
 
 	Optional<Cuboid> getClaimCuboidLocation(String pluginName, Player player, Location location);
 
