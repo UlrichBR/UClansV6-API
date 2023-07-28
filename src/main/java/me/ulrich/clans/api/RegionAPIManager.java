@@ -1,5 +1,6 @@
 package me.ulrich.clans.api;
 
+import java.util.HashMap;
 import java.util.Optional;
 
 import org.bukkit.Location;
