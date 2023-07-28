@@ -2,85 +2,56 @@ package me.ulrich.clans.api;
 
 import java.util.HashMap;
 import java.util.List;
-import java.util.Optional;
-import java.util.UUID;
 import java.util.Map.Entry;
+import java.util.Optional;
 
 import org.bukkit.Location;
-import org.bukkit.entity.Player;
 
 import me.ulrich.clans.Clans;
 import me.ulrich.clans.interfaces.RegionAPI;
+import me.ulrich.clans.interfaces.RegionImplement;
 
 public class RegionAPIManager implements RegionAPI {
 
-	public HashMap<String, RegionAPI> getRegionAPI(){
+	public RegionAPIManager(Clans clans) {
+	}
+
+	@Override
+	public HashMap<String, RegionImplement> getRegionAPI() {
 		return null;
 	}
-	
-	public RegionAPIManager(Clans clans) {
-	
-	}
-	
-	public boolean addImplementation(String pluginName, RegionAPI region) {
+
+	@Override
+	public boolean addImplementation(String pluginName, RegionImplement region) {
 		return false;
 	}
 
+	@Override
 	public boolean hasPluginImplemented(String pluginName) {
 		return false;
 	}
-	
+
+	@Override
 	public boolean removeImplementation(String pluginName) {
 		return false;
 	}
-	
+
+	@Override
 	public List<String> getImplementationPlugins() {
 		return null;
 	}
+
+	@Override
+	public List<Entry<String, RegionImplement>> findClaimedLocationImplement(Location location) {
+		return null;
+	}
+
+	@Override
+	public Optional<RegionImplement> getRegionImplemented(String pluginName) {
+		return Optional.empty();
+	}
+
 	
-	public List<Entry<String, RegionAPI>> findClaimedLocationImplement(Location location){
-		return null;
-	}
-
-	@Override
-	public boolean hasClaimLocation(String pluginName, Location location) {
-		return false;
-	}
-
-	@Override
-	public boolean isOwnerClaimLocation(String pluginName, Player player, Location location) {
-		return false;
-	}
-
-	@Override
-	public boolean isMemberClaimLocation(String pluginName, Player player, Location location) {
-		return false;
-	}
-
-	@Override
-	public Optional<UUID> getClaimOwner(String pluginName, Location location) {
-		return null;
-	}
-
-	@Override
-	public Location[] getClaimCornersLocation(String pluginName, Player player, Location location) {
-		return new Location[0];
-	}
-
-	@Override
-	public boolean canDestroyClaimLocation(String pluginName, Player player, Location location) {
-		return false;
-	}
-
-	@Override
-	public Optional<String> getPluginVersion(String pluginName) {
-		return Optional.empty();
-	}
-
-	@Override
-	public Optional<String> getClaimName(String pluginName, Location location) {
-		return Optional.empty();
-	}
 
 
 
