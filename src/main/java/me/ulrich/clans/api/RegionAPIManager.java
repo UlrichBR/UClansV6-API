@@ -11,6 +11,10 @@ import me.ulrich.clans.utils.Cuboid;
 
 public class RegionAPIManager implements RegionAPI {
 
+	public HashMap<String, RegionAPI> getRegionAPI(){
+		return null;
+	}
+	
 	public RegionAPIManager(Clans clans) {
 	
 	}
