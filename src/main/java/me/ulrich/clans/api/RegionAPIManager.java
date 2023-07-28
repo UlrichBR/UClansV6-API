@@ -9,7 +9,6 @@ import org.bukkit.entity.Player;
 
 import me.ulrich.clans.Clans;
 import me.ulrich.clans.interfaces.RegionAPI;
-import me.ulrich.clans.utils.Cuboid;
 
 public class RegionAPIManager implements RegionAPI {
 
@@ -19,6 +18,18 @@ public class RegionAPIManager implements RegionAPI {
 	
 	public RegionAPIManager(Clans clans) {
 	
+	}
+	
+	public boolean addImplementation(String pluginName, RegionAPI region) {
+		return false;
+	}
+
+	public boolean hasPluginImplemented(String pluginName) {
+		return false;
+	}
+	
+	public boolean removeImplementation(String pluginName) {
+		return false;
 	}
 
 	@Override
