@@ -14,4 +14,5 @@ Maven:
     &lt;groupId&gt;com.github.UlrichBR&lt;/groupId&gt;
     &lt;artifactId&gt;UClansV6-API&lt;/artifactId&gt;
     &lt;version&gt;VERSION&lt;/version&gt;
+    <scope>provided</scope>
 &lt;/dependency&gt;</code></pre>
